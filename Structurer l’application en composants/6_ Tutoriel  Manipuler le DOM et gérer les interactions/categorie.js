@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    const btnShowForm = document.querySelector('#btn-show-form');
-    const sectionForm = document.querySelector('#section-form');
-    const btnCancelForm = document.querySelector('#btn-cancel-form');
-    const formCategorie = document.querySelector('#form-categorie');
+    let btnShowForm = document.querySelector('#btn-show-form');
+    let sectionForm = document.querySelector('#section-form');
+    let btnCancelForm = document.querySelector('#btn-cancel-form');
+    let formCategorie = document.querySelector('#form-categorie');
 
     btnShowForm.addEventListener('click', () => {
         btnShowForm.hidden = true;
@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    const catNom = document.querySelector('#cat-nom');
-    const catCouleur = document.querySelector('#cat-couleur');
-    const tableBody = document.querySelector('#table-categories-body');
+    let catNom = document.querySelector('#cat-nom');
+    let catCouleur = document.querySelector('#cat-couleur');
+    let tableBody = document.querySelector('#table-categories-body');
 
     formCategorie.addEventListener('submit', (event) => {
         event.preventDefault(); 
 
-        const nom = catNom.value;
-        const couleur = catCouleur.value;
+        let nom = catNom.value;
+        let couleur = catCouleur.value;
 
-        const ligne = `<tr>
+        let ligne = `<tr>
             <td>${nom}</td>
             <td>${couleur}</td>
         </tr>`;
